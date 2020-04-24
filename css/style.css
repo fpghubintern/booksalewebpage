@@ -1,0 +1,471 @@
+@font-face{
+    font-family: 'metro-regular';
+    src :url('/assets/fonts/Metropolis-Regular.otf');
+}
+
+@font-face{
+    font-family: 'metro-medium';
+    src :url('/assets/fonts/Metropolis-Medium.otf');
+}
+
+@font-face{
+    font-family: 'metro-bold';
+    src :url('/assets/fonts/Metropolis-Bold.otf');
+}
+
+@font-face{
+    font-family: 'metro-light';
+    src :url('/assets/fonts/Metropolis-Light.otf');
+}
+
+html, body, *{
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    width: 100%;    
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.fluid_container{
+    width: 75%;
+    /* height: 100%; */
+    position: relative;
+    margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,li{
+    font-family: 'metro-regular';
+    list-style-type: none;
+    text-decoration: none;
+    color: #121212;
+}
+
+button{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 2em;
+}
+
+h2{
+    font-size: 1.5em;
+}
+
+h3{
+    font-size: 1.2em;
+}
+
+h4{
+    font-size: 0.99em;
+}
+
+h5{
+    font-size: 0.87em;
+}
+
+h6{
+    font-size: .79em;
+}
+
+p{
+    font-size: .66em;
+}
+
+/* HEADER */
+header{
+    /* border: 1px solid black; */
+    width: 100%;
+    /* position: fixed; */
+    z-index: 5;
+    background:#EFF2F5;
+}
+
+.elipse_img_container{
+    position: absolute;
+    z-index: 6;
+}
+
+header nav{
+    width: 100%;
+    padding: 20px 0;
+    /* border: 1px solid black; */
+}
+
+header nav ul{
+    margin-left: auto;
+    width: 80%;
+    padding: 20px 0;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+header nav ul li{
+    margin: 0 30px;
+}
+
+header nav ul li button{
+    padding: 10px 20px;
+    font-family: 'metro-regular';
+    font-size: .79em;
+    border: none;
+    color: #fff;
+    background: #A11D1E;
+}
+
+/* FIRST SECTION */
+main{
+    /* border: 1px solid black; */
+    padding: 0 0 20px 0;
+    /* border: 1px solid black; */
+}
+
+main .first_section{
+    width: 100%;
+    background:#EFF2F5;
+    /* border: 1px solid black; */
+    padding: 50px 0;
+    position: relative;
+}
+
+.elipse_img_container2{
+    position: absolute;
+    z-index: 1;
+    /* border: 1px solid black; */
+    right:0;
+}
+
+main .first_section .introduction{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+main .first_section .introduction .left,
+main .first_section .introduction .right{
+    /* border: 1px solid black; */
+    width: 47%;
+    padding: 20px 0;
+}
+
+main .first_section .introduction .left div{
+    width: 100%;
+    display: flex;
+    /* border: 1px solid black; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content:  flex-start;
+    text-align: left;
+    padding: 20px 0 0;
+}
+
+
+main .first_section .introduction .left .call_to_action_msg #price{
+    margin: 0 15px;
+}
+
+main .first_section .introduction .left .call_to_action{
+    padding: 40px 0;
+}
+
+main .first_section .introduction .left .call_to_action button{
+    padding: 10px 20px;
+    font-family: 'metro-regular';
+    font-size: .79em;
+    border: none;
+    color: #fff;
+    background: #A11D1E;
+}
+
+
+main .first_section .introduction .left h1{
+    font-family: 'metro-bold';
+    font-weight: bold;
+}
+
+main .first_section .introduction .left h6{
+    font-family: 'metro-light';
+    font-weight: 400;
+    line-height: 25px;
+}
+
+main .first_section .introduction .right{
+    position: relative;
+    text-align: right;
+    /* border: 1px solid black; */
+    height: 400px;
+    padding: 5px 0;
+}
+
+
+main .first_section .introduction .right img{
+    position: absolute;
+    width: 100%;
+    right:0;
+    margin:0;
+    z-index: 2;
+}
+
+/* SECOND SECTION */
+main .second_section{
+    padding: 150px 0 50px;
+}
+
+main .second_section .book_description{
+    padding: 20px 0;
+    /* border: 1px solid black; */
+}
+
+main .second_section .book_description .header{
+    width: 100%;
+    padding: 20px 0 0;
+    /* border: 1px solid black; */
+}
+
+main .second_section .book_description .header h2{
+    font-family: 'metro-bold';
+    color: #A11D1E;
+}
+
+main .second_section .book_description .body{
+    width: 100%;
+    padding: 20px 0;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+main .second_section .book_description .body div{
+    width: 47%;
+    /* border: 1px solid black; */
+    padding: 20px 0;
+}
+
+main .second_section .book_description .body div img{
+    width: 40%;
+}
+
+main .second_section .book_description .body .right{
+    text-align: left;
+}
+
+main .second_section .book_description .body .right h6{
+    line-height: 24px;
+    font-family: 'metro-light';
+    font-weight: 400;
+}
+
+/* FOOTER */
+footer{
+    background: #A11D1E;
+    width: 100%;
+    margin-top: auto;
+    padding: 40px 0;
+}
+
+footer nav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 5px;
+}
+
+footer nav ul{
+    padding: 20px 0;
+}
+
+footer nav ul li{
+    margin: 20px 0;
+}
+
+footer nav ul li h6{
+    color: #fff;
+    font-family: 'metro-light';
+    font-weight: 400;
+}
+
+footer nav ul button{
+    padding: 10px 20px;
+    font-family: 'metro-bold';
+    font-size: .79em;
+    border: 2px solid white;
+    color: #fff;
+    background: #A11D1E;
+}
+
+footer nav .top_foot{
+    width: 100%;
+    display: flex;
+}
+
+footer nav .top_foot .image_container{
+    width: 15%;
+    /* border: 1px solid black;     */
+    display: flex;
+    align-items: center;
+}
+
+footer nav .top_foot .image_container img{
+    width: 78%;
+}
+
+footer nav .bottom_foot {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    padding: 20px 0;
+}
+
+footer nav .bottom_foot h6{
+    color: #fff;
+    font-family: 'metro-light';
+    font-weight: 400;
+}
+
+@media only screen and (max-width:1024px){
+
+}
+
+@media only screen and (max-width:768px){
+    
+    .elipse_img_container img{
+        width: 70%;
+    }
+
+    .elipse_img_container2{
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .elipse_img_container2 img{
+        width: 90%;
+        right: 0;
+        
+    }
+}
+
+@media only screen and (max-width:450px){
+    .fluid_container{
+        width: 80%;
+        /* border: 1px solid black; */
+    }
+
+    header nav ul{
+        width: 100%;
+    }
+
+    header nav ul li{
+        margin:0;
+    }
+
+    main .first_section .introduction{
+        flex-direction: column-reverse;
+    }
+
+    main .first_section .introduction .left,
+    main .first_section .introduction .right{
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+
+    main .first_section .introduction .left div{
+        justify-content: center;
+        text-align: center;
+    }
+
+    main .first_section .introduction .left .call_to_action_msg{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .first_section .introduction .left .call_to_action_msg h5{
+        margin: 20px 0;
+    }
+
+    main .first_section .introduction .left .call_to_action_msg #price{
+        margin:0;
+    }
+
+    .elipse_img_container{
+        display: none;
+    }
+    
+    .elipse_img_container2{
+        text-align: right;
+    }
+
+    .elipse_img_container2 img{
+        width: 95%;
+    }
+
+    main .second_section{
+        padding-top: 80px;
+    }
+
+    main .second_section .book_description .header{
+        text-align: center;
+    }
+
+    main .second_section .book_description .body{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+
+    main .second_section .book_description .body .right{
+        text-align: center;
+    }
+
+    main .second_section .book_description .body div{
+        width: 100%;
+    }
+
+    footer nav .top_foot{
+        flex-direction: column;
+        width: 100%;
+        /* border: 1px solid black; */
+        align-items: center;
+    }
+
+    footer nav .top_foot ul{
+        width: 100%;
+        text-align: center;
+    }
+
+    footer nav .top_foot ul li{
+        margin: 40px 0;
+    }
+
+    footer nav .top_foot .image_container{
+        width: 100%;
+        text-align: center;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+    }
+
+    footer nav .top_foot .image_container img{
+        width: 60%;
+        margin: 0;
+        /* border: 1px solid black; */
+    }
+}
