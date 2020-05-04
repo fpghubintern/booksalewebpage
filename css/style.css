@@ -1,22 +1,32 @@
 @font-face{
     font-family: 'metro-regular';
-    src :url('/assets/fonts/Metropolis-Regular.otf');
+    src :url('../assets/fonts/Metropolis-Regular.otf');
 }
 
 @font-face{
     font-family: 'metro-medium';
-    src :url('/assets/fonts/Metropolis-Medium.otf');
+    src :url('../assets/fonts/Metropolis-Medium.otf');
 }
 
 @font-face{
     font-family: 'metro-bold';
-    src :url('/assets/fonts/Metropolis-Bold.otf');
+    src :url('../assets/fonts/Metropolis-Bold.otf');
 }
 
 @font-face{
     font-family: 'metro-light';
-    src :url('/assets/fonts/Metropolis-Light.otf');
+    src :url('../assets/fonts/Metropolis-Light.otf');
 }
+
+@font-face {
+    font-family: 'metropolisthin';
+    src: url('metropolis-thin-webfont.woff2') format('woff2'),
+         url('metropolis-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 html, body, *{
     margin:0;
@@ -32,6 +42,7 @@ body{
     min-height: 100vh;
     box-sizing: border-box;
     position: relative;
+    
 }
 
 .fluid_container{
@@ -42,7 +53,7 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6,p,a,li{
-    font-family: 'metro-regular';
+    font-family:  'metropolisthin';
     list-style-type: none;
     text-decoration: none;
     color: #121212;
@@ -276,71 +287,94 @@ footer{
     width: 100%;
     margin-top: auto;
     padding: 40px 0;
+   
 }
 
-footer nav{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0 5px;
+.first {
+    font-family: 'metropolisthin';
+    height:24px;
+    /* width:20%; */
+    width:14rem;
+    font-weight:900;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    margin: 10px auto !important;
+    text-align: center;
+    line-height:24px;
+    font-style:normal;
+    
 }
 
-footer nav ul{
-    padding: 20px 0;
+.second {
+    font-family: 'metropolisthin';
+    width: 24%;
+    margin:0 auto;
+    text-align: center;
+    color:#FFFFFF;
+    font-size:14px;
 }
 
-footer nav ul li{
-    margin: 20px 0;
+footer :not(:last-child)  {
+    margin-bottom:2rem;
 }
 
-footer nav ul li h6{
-    color: #fff;
-    font-family: 'metro-light';
-    font-weight: 400;
+.content {
+    width:50%;
+    margin:0 auto; 
+    height:30px;
+     position:relative;  
 }
 
-footer nav ul button{
-    padding: 10px 20px;
-    font-family: 'metro-bold';
-    font-size: .79em;
-    border: 2px solid white;
-    color: #fff;
-    background: #A11D1E;
+.input {
+    width:70%;
+    border: none;
+    outline:none;
+    height:30px;
+   position:relative;  
 }
 
-footer nav .top_foot{
-    width: 100%;
-    display: flex;
+
+input::placeholder{
+padding:20px;
+font-weight: 300;
+font-size:11px;
+box-sizing:border-box;
+font-family: 'metropolisthin';
 }
 
-footer nav .top_foot .image_container{
-    width: 15%;
-    /* border: 1px solid black;     */
-    display: flex;
-    align-items: center;
+.btn {
+    background-color: #A11D1E;;
+    border:1px solid #fff;
+    outline:none;
+    height:30px;
+    width:30%;
+    color:white;
+     font-size:10px;
+    text-transform: uppercase; 
+      position: absolute;
 }
 
-footer nav .top_foot .image_container img{
-    width: 78%;
+.last {
+    width:70%;
+    margin:0 auto;
+    border-top:.5px solid #fff;
 }
+.copyright {
+    margin-top:10px;
+    text-align: center;
+    color:#fff;
+    font-family: 'metropolisthin';
+    font-weight:500;
+    
 
-footer nav .bottom_foot {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid rgba(255, 255, 255, .2);
-    padding: 20px 0;
-}
-
-footer nav .bottom_foot h6{
-    color: #fff;
-    font-family: 'metro-light';
-    font-weight: 400;
 }
 
 @media only screen and (max-width:1024px){
-
+    .second {
+        
+        width:34%;
+       
+    }
 }
 
 @media only screen and (max-width:768px){
@@ -360,6 +394,62 @@ footer nav .bottom_foot h6{
         right: 0;
         
     }
+
+  
+    
+    .second {
+    
+        width: 45%;
+        
+    }
+    
+    footer :not(:last-child)  {
+        margin-bottom:2rem;
+    }
+    
+    .content {
+        width:60%;
+         
+    }
+    
+    .input {
+        width:70%;
+        border: none;
+        outline:none;
+        height:30px;
+       position:relative;  
+    }
+    
+    
+ 
+    
+    .btn {
+        background-color: #A11D1E;;
+        border:1px solid #fff;
+        outline:none;
+        height:30px;
+        width:30%;
+        color:white;
+         font-size:10px;
+        text-transform: uppercase; 
+          position: absolute;
+    }
+    
+    .last {
+        width:80%;
+        margin:0 auto;
+        border-top:.5px solid #fff;
+    }
+    .copyright {
+        margin-top:10px;
+        text-align: center;
+        color:#fff;
+        font-family: 'metropolisthin';
+        font-weight:500;
+        
+    
+    }
+    
 }
 
 @media only screen and (max-width:450px){
@@ -467,5 +557,79 @@ footer nav .bottom_foot h6{
         width: 60%;
         margin: 0;
         /* border: 1px solid black; */
+    }
+
+
+    .first {
+       
+        width:14rem;
+        font-weight:900;
+        
+    }
+    
+    .second {
+        font-family: 'metropolisthin';
+        width: 65%;
+        margin:0 auto;
+        text-align: center;
+        color:#FFFFFF;
+        font-size:14px;
+    }
+    
+    footer :not(:last-child)  {
+        margin-bottom:2rem;
+    }
+    
+    .content {
+        width:75%;
+       
+    }
+    
+  
+    
+    
+
+    
+    .btn {
+        background-color: #A11D1E;;
+        border:1px solid #fff;
+        outline:none;
+        height:30px;
+        width:30%;
+        color:white;
+         font-size:10px;
+        text-transform: uppercase; 
+          position: absolute;
+    }
+    
+    .last {
+        width:85%;
+        margin:0 auto;
+        border-top:.5px solid #fff;
+    }
+    .copyright {
+        margin-top:10px;
+        text-align: center;
+        color:#fff;
+        font-family: 'metropolisthin';
+        font-weight:500;
+        
+    
+    }
+    
+}
+
+
+@media only screen and (max-width:340px){
+
+    .content {
+        width:85%;
+       
+    }
+
+    .last {
+        width:95%;
+        margin:0 auto;
+        border-top:.5px solid #fff;
     }
 }
