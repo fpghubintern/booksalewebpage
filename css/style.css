@@ -34,7 +34,7 @@ html, body, *{
 }
 
 html,body{
-    width: 100%;    
+    width: 100%;
 }
 
 body{
@@ -53,10 +53,11 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6,p,a,li{
-    font-family:  'metropolisthin';
+    font-family: 'metropolisthin' !important;   
     list-style-type: none;
     text-decoration: none;
     color: #121212;
+
 }
 
 button{
@@ -108,12 +109,12 @@ header{
 header nav{
     width: 100%;
     padding: 20px 0;
-    /* border: 1px solid black; */
+ /* border: 1px solid black; */
 }
 
 header nav ul{
     margin-left: auto;
-    width: 80%;
+    width: 90%;
     padding: 20px 0;
     display : flex;
     align-items: center;
@@ -127,7 +128,7 @@ header nav ul li{
 
 header nav ul li button{
     padding: 10px 20px;
-    font-family: 'metro-regular';
+    font-family: 'metropolisthin' !important;  
     font-size: .79em;
     border: none;
     color: #fff;
@@ -185,6 +186,8 @@ main .first_section .introduction .left div{
 }
 
 
+
+
 main .first_section .introduction .left .call_to_action_msg #price{
     margin: 0 15px;
 }
@@ -195,7 +198,8 @@ main .first_section .introduction .left .call_to_action{
 
 main .first_section .introduction .left .call_to_action button{
     padding: 10px 20px;
-    font-family: 'metro-regular';
+    /* font-family: 'metro-regular'; */
+    font-family: 'metropolisthin' !important;  
     font-size: .79em;
     border: none;
     color: #fff;
@@ -204,14 +208,16 @@ main .first_section .introduction .left .call_to_action button{
 
 
 main .first_section .introduction .left h1{
-    font-family: 'metro-bold';
+    /* font-family: 'metro-bold'; */
+    font-family: 'metropolisthin' !important;  
     font-weight: bold;
 }
 
 main .first_section .introduction .left h6{
-    font-family: 'metro-light';
+    /* font-family: 'metro-light'; */
+    font-family: 'metropolisthin' !important;  
     font-weight: 400;
-    line-height: 25px;
+     line-height: 25px;
 }
 
 main .first_section .introduction .right{
@@ -248,7 +254,8 @@ main .second_section .book_description .header{
 }
 
 main .second_section .book_description .header h2{
-    font-family: 'metro-bold';
+    /* font-family: 'metro-bold'; */
+    font-family: 'metropolisthin' !important;  
     color: #A11D1E;
 }
 
@@ -369,6 +376,10 @@ font-family: 'metropolisthin';
 
 }
 
+
+
+
+
 @media only screen and (max-width:1024px){
     .second {
         
@@ -377,10 +388,20 @@ font-family: 'metropolisthin';
     }
 }
 
+@media only screen and (max-width:802px){
+    /* header nav ul li{
+        margin: 0 20px;
+    } */
+
+    .elipse_img_container img{
+        width: 50%;
+    }
+}
+
 @media only screen and (max-width:768px){
     
     .elipse_img_container img{
-        width: 70%;
+        width: 50%;
     }
 
     .elipse_img_container2{
@@ -390,10 +411,16 @@ font-family: 'metropolisthin';
     }
 
     .elipse_img_container2 img{
-        width: 90%;
+        width: 60%;
         right: 0;
         
     }
+
+
+    /* header nav ul li{
+        margin: 0 1rem;
+       
+    } */
 
   
     
@@ -607,6 +634,7 @@ font-family: 'metropolisthin';
         margin:0 auto;
         border-top:.5px solid #fff;
     }
+
     .copyright {
         margin-top:10px;
         text-align: center;
@@ -614,7 +642,25 @@ font-family: 'metropolisthin';
         font-family: 'metropolisthin';
         font-weight:500;
         
+    }
+
+    .input {
+        width:70%;
+        border: none;
+        outline:none;
+        height:30px;
+       position:relative;
+       border-radius:0px;  
+    }
     
+    
+    input::placeholder{
+    padding:0px 15px;
+    font-weight: 300;
+    font-size:11px;
+    box-sizing:border-box;
+    font-family: 'metropolisthin';
+
     }
     
 }
@@ -632,4 +678,7 @@ font-family: 'metropolisthin';
         margin:0 auto;
         border-top:.5px solid #fff;
     }
+
+    
 }
+
